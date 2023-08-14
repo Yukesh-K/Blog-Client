@@ -1,0 +1,71 @@
+@import "./Navbar.css";
+@import "./Home.css";
+@import "./Article.css";
+@import "./View.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  height: auto;
+  width: 100vw;
+}
+
+/* --- ToTop & DarkMode & NoSource Style ---*/
+
+.To{
+  width: 80%;
+  height: 50px;
+  margin: 0.1% auto;
+  display: flex;
+  column-gap: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.To>button{
+  outline: none;
+  border: none;
+  color: rebeccapurple;
+  background-color: white;
+  border: 1px solid rebeccapurple;
+  border-radius: 0.8vw;
+  text-align: center;
+  width: 5rem;
+  height: 70%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+}
+
+.HomeAnchor{
+  text-decoration: none;
+}
+
+.HomeAnchor:hover{
+  color: white;
+}
+
+.To>button:hover{
+  color:white;
+  background-color: royalblue;
+}
+
+.ModeSet{
+  color: white;
+  background-color: black;
+}
+
+.NoSource{
+  border-radius: 2vw;
+  width: 40%;
+  margin: 2% auto;
+  height: 55vh;
+  background-color: white;
+}
+
+/*2117d185 ff00006b */

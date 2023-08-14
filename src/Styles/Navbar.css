@@ -1,0 +1,91 @@
+/* --- Navbar Style ---*/
+
+.Navbar{
+    border-bottom: 1px solid black;
+    width: 80%;
+    height: 30vh;
+    margin: 0 10%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar_Logo{
+    height: 80%;
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Link{
+    text-decoration: none ;
+}
+
+.NavbarImg{
+   background-color: white;
+   border-radius: 2vw;
+
+}
+
+.Theme{
+  position: absolute;
+  top: 0;
+  right: 9.5%;
+  width: 4vw;
+  height: 8vh;
+  cursor: pointer;
+}
+
+.Navbar_Buttons{
+    display: grid;
+    grid-template-columns: repeat(6,7rem);
+    justify-content: space-evenly;
+    height: 20%;
+}
+
+.Navbar_Buttons>button{
+    color: red;
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5vw;
+    overflow: hidden;
+}
+
+.Navbar_Buttons>button>.Link:focus{
+    color:#ff00006b;
+    font-weight: 600;
+}
+
+.Navbar_Buttons>button:hover{
+    border: none;
+    border-radius: 0.5vw;
+    border: 0.5px solid #ff00006b;
+}
+
+/* --- Media Query for Navbar ---*/
+
+
+@media only screen and (max-width:650px){
+    .Navbar_Logo{
+        height: 60%;
+    }
+
+    .Navbar_Buttons{
+        grid-template: 50% 50% / repeat(3,25%);
+        height: 40%;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+
+    .Navbar_Buttons>button{
+        border: 0.1px solid rebeccapurple;
+        height: 1.5rem;
+        width: 100%;
+    }
+}

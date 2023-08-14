@@ -1,0 +1,124 @@
+/* --- Article Style ---*/
+
+.View{
+    height: 200vh;
+    display: grid;
+    grid-template: repeat(2,50%) / 100%;
+    justify-content: center;
+    margin: 0% 10%;
+    width: 80%;
+}
+
+.MainView{
+  display: grid;
+  grid-template: 8% 57% 25% 10% / 60%;
+  justify-content: center;
+  grid-row-gap: 0.5%;
+  margin-bottom: 3%;
+}
+
+.MainView>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #ff0000a4;
+    font-weight: 550;
+    text-align: center;
+    text-align-last: center;
+}
+
+.MainView>div:nth-child(2){
+    border-radius: 1.5vw;
+    overflow: hidden;
+}
+
+.MainView>div:nth-child(3){
+    border-top: 1px solid rebeccapurple;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 1vw;
+    font-size: 1.05rem;
+    text-align-last: center;
+    overflow: hidden;
+}
+
+.MainView>div:nth-child(4){
+    border-top: 1px solid rebeccapurple;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1vw;
+}
+
+.ViewCategory{
+    display: grid;
+    grid-template: 49.3% 49.3% / 35% 35%;
+    justify-content: center;
+    grid-gap: 1.5%
+}
+
+.ViewSpan{
+  font-size: 1.2rem;
+  color: rebeccapurple;
+  font-weight: 550;
+}
+
+.CategoryBox{
+    border:1px solid black;
+    display: grid;
+    grid-template: 70% 20% 10%/ 100%
+}
+
+.CategoryBox>div:nth-child(2),.CategoryBox>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw;
+    text-align: justify;
+}
+
+
+/* --- Media Query for View ---*/
+
+
+@media only screen and (max-width:650px){
+
+    .ViewSpan{
+        font-size: 0.6rem;
+    }
+    .MainView>div>*{
+        font-size: 0.6rem;
+    }
+
+    .MainView>div:nth-child(1),.MainView>div:nth-child(3){
+        font-size: 0.6rem;
+    }
+    .CategoryBox{
+        font-size: 0.6rem;
+    }
+
+}
+
+@media only screen and (min-width:650px) and (max-width:1250px){
+
+    .MainView>div:nth-child(1){
+        font-size: 1rem;
+        align-items: start;
+    }
+    .MainView>div:nth-child(3){
+        align-items: start;
+        font-size: 0.85rem;
+    }
+    .CategoryBox>div:nth-child(2){
+        align-items: start;
+        overflow: hidden;
+        font-size: 0.85rem;
+    }
+    
+}
