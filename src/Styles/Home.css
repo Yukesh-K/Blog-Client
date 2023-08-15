@@ -140,8 +140,8 @@
     }
 
     .Latest_Details>div{
-        font-size: 0.6rem;
-        text-align: center;
+        font-size: 0.5rem;
+        align-items: center;
     }
 
 }
@@ -149,9 +149,8 @@
 @media only screen and (min-width:650px) and (max-width:1250px){
 
     .Latest_Details>div{
-        font-size: 0.8rem;
-        text-align: center;
-        align-items: start;
+        font-size: 0.7rem;
+        align-items: center;
     }
 
 }
